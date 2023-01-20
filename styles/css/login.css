@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background: url(../../images/bdsd.jpg);
+  font-family: "Rubik", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  margin-top: 10px;
+}
+.user i {
+  color: white;
+}
+.user:hover {
+  border-color: #0D75FF;
+  box-shadow: 1px 1px 1px 1px #0D75FF;
+  transition: 0.3s ease-in-out;
+}
+
+.form-control {
+  all: unset;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.form-control:focus {
+  all: unset;
+}
+
+.input_text {
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0D75FF;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid rgba(0, 255, 255, 0.411);
+  border-radius: 50%;
+  border-left-color: rgb(0, 255, 255);
+  -webkit-animation: loader 1.3s linear infinite;
+          animation: loader 1.3s linear infinite;
+}
+
+@-webkit-keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hide {
+  opacity: 0;
+}
+
+#login-form {
+  background-color: rgba(15, 15, 15, 0.325);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+i {
+  color: white;
+}/*# sourceMappingURL=login.css.map */
